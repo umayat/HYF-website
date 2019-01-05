@@ -1,0 +1,26 @@
+#about-image{
+	background-image: url('../images/classroom.jpeg');
+	background-color: white;	/* Used if the image is unavailable */
+	width: 100%;						/* Set width of container */
+	height: 500px;					/* You must set a specified height */
+	text-align: center;
+}
+
+#hero-text{
+	position: relative;
+	top: 40%;
+	display: block;
+	font-size: 5em;
+	font-weight: bold;
+	color: white;
+	text-transform: uppercase;
+}
+
+#HYF-name{
+	color: steelblue;
+}
+
+#about-content p{
+	padding-bottom: 1em;
+	text-align: center;
+}

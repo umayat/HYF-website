@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>HYF | Home</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- style sheets -->
+		<link rel="stylesheet" type="text/css" href="css/index_style.css">
+
+		<!-- scripts -->
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+	</head>
+	
+	<body>
+
+		<!-- header -->
+		<div id="header" class="flex-container">
+
+			<div id="navbar">
+				<a id="login-button" class="rounded-button" href="#">Login</a>
+				<a class="link-logo" href="https://github.com/HackYourFuture">
+					<img src="images/github_logo.png" id="github-logo" alt="Github logo" />
+				</a>
+				<a class="link-logo" href="index.html">
+					<img src="images/home_logo.png" id="home-logo" alt="Home logo" />
+				</a>
+			</div>
+			
+			<div class="header-image bg-image" id="random-image"></div>
+			
+			<div class="header-image bg-image" id="hyf-logo">
+				<a href="about.html" id="about-button" class="rounded-button">About us</a>
+			</div>
+
+		</div>
+
+		<!-- summary -->
+		<div id="summary" class="flex-container">
+			
+			<div id="topic-stat" class="stat-content">
+				<span id="topic-stat-value" class="stat-value"></span>
+				<span id="topic-stat-title" class="stat-title">Modules</span>
+			</div>
+			
+			<div id="instructor-stat" class="stat-content">
+				<span id="instructor-stat-value" class="stat-value"></span>
+				<span id="instructor-stat-title" class="stat-title">Instructors</span>
+			</div>
+
+			<div id="date-stat" class="stat-content">
+				<span id="date-stat-value" class="stat-value"></span>
+				<span id="date-stat-title" class="stat-title">Weeks</span>
+			</div>
+
+		</div>
+
+		<!-- main content -->
+		<div id="main-content">
+			<h1 class="heading">Topics & Schedule</h1>
+
+			<div id="data-options" class="flex-container">
+
+				<!-- menu to sort class schedule -->
+				<div id="sort" class="rounded-button">	
+					<h3>Sort</h3>
+					<ul id="sort-options">
+						<li onclick="sort('topic')">Topic</li>
+						<li onclick="sort('date')">Date</li>
+						<li onclick="sort('instructor')">Instructor</li>
+					</ul>
+				</div>
+
+				<!-- menu to filter class schedule -->
+				<div id="filter" class="rounded-button">
+					<h3>Filter</h3>
+					<ul id="filter-options">
+						
+						<!-- menu to sort by topic -->
+						<li class="dropdown-menu">Topic &#x2B9F
+							<div id="filter-by-topic" class="dropdown-content"></div>
+						</li>
+
+						<!-- menu to sort by date -->
+						<li class="dropdown-menu">Date &#x2B9F
+							<div id="filter-by-date" class="dropdown-content"></div>
+						</li>
+
+						<!-- menu to sort by instructor -->
+						<li class="dropdown-menu">Instructor &#x2B9F
+							<div id="filter-by-instructor" class="dropdown-content"></div>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+			<div id="topics_schedule" class="flex-container"></div>
+		</div>
+
+		<div id="footer" class="flex-container">
+			<p>&copy; Copyright 2018 HackYourFuture - Ryerson Chapter</p>
+		</div>
+
+	</body>
+</html>

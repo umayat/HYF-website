@@ -1,0 +1,203 @@
+body{
+	font-family: 'calibri';	/* Set font for html  */
+}
+
+/* Common style for all flexboxes; element sepcific styles will override these */
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: space-around;
+	align-items: flex-start;
+	clear: both;
+}
+
+/* Common style for all background images; element specific styles will override these */
+.bg-image{
+	background-repeat: no-repeat;	/* Do not repeat the image */
+	background-position: center;	/* Center the image */
+	background-size: cover;	/* Resize the background image to cover the entire container */
+}
+
+.header-image{
+	background-size: contain;	/* Resize the background image to fit inside the container */
+	background-color: #0e304c;	/* Used if the image is unavailable */
+	width: 45%;						/* Set width of container */
+	height: 500px;					/* You must set a specified height */
+}
+
+#header{
+	background-color: #0e304c;	/* Fill in white spaces not covered by header image */
+}
+
+#random-image{
+	background-image: url("../images/Web-development-designing-Anvar-Freelancer-1.png");	/* The left image */
+}
+
+#hyf-logo{
+	background-image: url("../images/HYF_logo.png");	/* The right image */
+	background-position: 50% 30%;			/* Resize the image */
+	text-align: center;						/* Center text horizontally inside image container */
+}
+
+#navbar{
+	flex: 1 100%;		/* Make navbar span entire width of page */
+	padding: 0.5em;	
+}
+
+.link-logo{
+	float: right;				
+	display: inline-block;	/* Display logo inline with login button */
+}
+
+.link-logo:hover{
+	filter: brightness(200%);	/* Brighten logo on mouseover to provide visual feedback */
+}
+
+#github-logo{
+	height: 40px;		/* Resize image */
+	padding: 0 1em;
+}
+
+#home-logo{
+	height: 25px;		/* Resize image */
+	padding: 0.5em 0;
+}
+
+#login-button{
+	color: rgba(255, 255, 255, 1);
+	float: right;
+	margin: 0.2em 0;
+}
+
+#about-button{
+	color: rgba(255, 255, 255, 1);
+	position: relative;					/* Position button relative to parent element */
+	top: 50%;								/* Center vertically relative to parent */
+}
+
+#login-button:hover, #about-button:hover{
+	color: #0e304c;
+	background-color: rgba(255, 255, 255, 1);
+}
+
+#summary{
+	background-color: lightgray;
+	text-align: center;
+}
+
+.stat-content{
+	padding: 3em;
+}
+
+.stat-value{
+	font-size: 3em;
+	display: block;
+	font-weight: bold;
+	color: steelblue;
+}
+
+.stat-title{
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 0.9em;
+	display: block;
+}
+
+.heading{
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	padding: 1em;
+	margin-bottom: 0;
+}
+
+.rounded-button{
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0.5em 1.5em;
+	border: 1.5px solid white;
+	border-radius: 25px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#sort, #filter{
+	border: 2px solid black;
+	border-radius: 50px;
+	padding: 0 1em;
+	cursor: default;
+	text-align: center;
+}
+
+#sort h3, #sort-options, #sort-options > li, #filter h3, #filter-options, #filter-options > li{
+	display: inline-block;
+	margin: 5px;
+}
+
+#sort-options > li:hover, #filter-options > li:hover{
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.dropdown-content{
+	display: none;
+  	background-color: #f9f9f9;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-radius: 5px;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
+.dropdown-content > a{
+  	color: black;
+  	padding: 5px;
+  	margin: 0;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+}
+
+.dropdown-menu:hover > div{
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+
+.dropdown-content a:hover{
+	color: red;
+}
+
+#topics_schedule{
+	margin: 0;
+	padding: 2em 1em;
+}
+
+#footer{
+	background-color: lightgray;
+	padding: 3em;
+}
+
+@media screen and (max-width: 900px) {
+	.header-image{
+		width: 90%;
+		height: 300px;
+	}
+
+	.topic{
+		width: 90% !important;
+	}
+
+	.stat-content{
+		padding: 1em;
+	}
+
+	.stat-value{
+		font-size: 1.5em;
+	}
+}
